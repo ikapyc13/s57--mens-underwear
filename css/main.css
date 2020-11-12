@@ -30,15 +30,6 @@ a {
 	opacity: 1;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-	
-}
-body input:required:valid,
-body textarea:required:valid {
-	
-}
-
 html {
     position: relative;
     height: 100%;
@@ -1242,8 +1233,6 @@ div .page-card__info-product-name {
 }
 .rub {
 	display: inline-block;
-}
-.page-card__price-nam {
 }
 .page-card__price-nam .rub {
 	position: relative;

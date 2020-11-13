@@ -845,10 +845,13 @@ div .header-menu-popup--active {
 }
 .latest-products__cart-add-bl-n-size {
 	display: none;
+	padding: 0;
 	justify-content: space-around;
 	cursor: default;
 }
 .latest-products__cart-add-bl-n-size div {
+	flex: 1;
+	padding: 9px 0 11px;
 	cursor: pointer;
 }
 .latest-products__cart-add-bl-n-size div:hover {

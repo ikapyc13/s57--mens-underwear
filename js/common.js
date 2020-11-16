@@ -33,7 +33,7 @@ jQuery(function($){
     $(".latest-products__cart-add-bl-n-size").click(function(){
         $(this).toggleClass("flex-bl");
         $(this).find("+.latest-products__cart-add-bl-n-akt").toggleClass("flex-bl");
-        $('body').append('<div class="cart-add-popup"><div>Товар добавлен</div></div>');
+        $('body').append('<div class="cart-add-popup"><div>Товар добавлен </div></div>');
         var x_this = this;
         setTimeout(function() {
             $(x_this).find("+.latest-products__cart-add-bl-n-akt").toggleClass("flex-bl");

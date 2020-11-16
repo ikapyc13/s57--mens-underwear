@@ -1422,7 +1422,7 @@ div .page-card__price-through {
 	padding: 0 15px 15px;
 }
 .cart-add-popup {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: block;

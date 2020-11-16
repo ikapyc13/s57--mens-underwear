@@ -32,7 +32,7 @@ jQuery(function($){
 
     $(".latest-products__cart-add-bl-n-size div").click(function(){
         $(this).parent().parent().find(".latest-products__cart-add-bl-n-size").toggleClass("flex-bl");
-        $(this).parent().find("+.latest-products__cart-add-bl-n-akt").toggleClass("flex-bl");
+        $(this).parent().parent().find(".latest-products__cart-add-bl-n-akt").toggleClass("flex-bl");
         var x_this = this;
         setTimeout(function() {
         	$(x_this).parent().find("+.latest-products__cart-add-bl-n-akt").toggleClass("flex-bl");

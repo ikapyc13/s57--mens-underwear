@@ -30,7 +30,7 @@ jQuery(function($){
         return false;
     });
 
-    $(".latest-products__cart-add-bl-n-size").click(function(){
+    $('body').on("click", ".latest-products__cart-add-bl-n-size", function(e){
         $(this).toggleClass("flex-bl");
         $(this).find("+.latest-products__cart-add-bl-n-akt").toggleClass("flex-bl");
         var x_this = this;

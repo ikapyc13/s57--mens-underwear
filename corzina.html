@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<link type="text/css" rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link type="text/css" rel="stylesheet" href="libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+	<link type="text/css" rel="stylesheet" href="libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+	<link type="text/css" rel="stylesheet" href="libs/bootstrap4.3.1/css/bootstrap-reboot.min.css"><!--bootstrap-->
+	<link type="text/css" rel="stylesheet" href="libs/bootstrap4.3.1/css/bootstrap-grid.min.css"><!--bootstrap-->
+	
+	<link type="text/css" rel="stylesheet" href="css/fonts.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+	<div class="content-main">
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="header-top-row flex-bl align-items-center">
+								<div class="header-top-row__search-tel flex-bl align-items-center justify-content--space-between">
+									<form class="header-top-row__search">
+										<div class="header-top-row__search-bl flex-bl">
+											<input class="header-top-row__search-input transition-03s" type="text" placeholder="Поиск по товарам...">
+											<button class="header-top-row__search-button" type="submit"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"></path></svg></button>
+										</div>
+									</form>
+									<a class="header-top-row__tel transition-03s" href="tel:+80000000000">+8 (000) 000-00-00<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="transition-03s"><path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z"></path></svg></a>
+								</div>
+								<nav class="header-top-row__menu">
+									<ul class="flex-bl menu-mob-top">
+										<li><a href="#">Акции и Новости</a></li>
+										<li><a href="#">Акции и Новости</a></li>
+										<li><a href="#">Акции и Новости</a></li>
+									</ul>
+								</nav>
+								<div class="header-top-row__user flex-bl justify-content--space-between">
+									<div class="header-top-row__heart"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg></div>
+									<div class="header-top-row__user-bl">
+										<div class="header-top-row__user-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 15" fill="none"><path d="M6.77284 0C6.94159 0.0168365 7.11188 0.0290812 7.28062 0.0489789C8.02312 0.142345 8.70271 0.405607 9.31174 0.835703C10.3641 1.57957 11.0376 2.58517 11.2661 3.85097C11.576 5.55605 11.1066 7.03613 9.86554 8.2606C9.72134 8.40294 9.55412 8.52233 9.39765 8.65396C9.37463 8.67386 9.35009 8.6907 9.31787 8.71672C9.35162 8.73508 9.37617 8.75039 9.40225 8.76263C10.1401 9.09783 10.7906 9.55701 11.3597 10.131C11.8813 10.659 12.3047 11.259 12.6299 11.9248C12.9398 12.56 13.1454 13.2274 13.2574 13.9253C13.2743 14.0325 13.3157 14.135 13.3279 14.2406C13.374 14.6248 13.1208 14.9447 12.7373 14.9952C12.3998 15.0396 12.0608 14.7702 12.0148 14.4319C11.8322 13.0988 11.3076 11.931 10.3166 10.9973C9.5127 10.2397 8.56618 9.76364 7.46931 9.59987C4.83224 9.2065 2.51272 10.7646 1.65978 13.0452C1.52017 13.4187 1.4266 13.8044 1.36523 14.1993C1.33455 14.3967 1.31461 14.6018 1.17041 14.7656C1.00166 14.9585 0.731661 15.0457 0.489277 14.9722C0.226951 14.8927 0.0428616 14.6738 0.00911195 14.4166C-0.0123651 14.2575 0.00297571 14.109 0.0674068 13.9605C0.101156 13.8825 0.104225 13.7922 0.119565 13.708C0.289848 12.7927 0.627344 11.9447 1.13819 11.1672C1.63523 10.4126 2.25193 9.77282 3.01129 9.27997C3.3043 9.08865 3.62186 8.93406 3.92867 8.76416C3.95475 8.74886 3.98236 8.73661 4.01918 8.71672C3.9839 8.68917 3.95628 8.66774 3.92714 8.64631C2.94686 7.91469 2.32863 6.95041 2.07551 5.75655C1.62909 3.6275 2.6784 1.45559 4.62974 0.482136C5.20349 0.195916 5.81405 0.041326 6.45683 0.0137753C6.49518 0.0122447 6.53353 0.00459177 6.57188 0C6.63938 0 6.70688 0 6.77284 0ZM6.68387 8.19479C6.82654 8.18254 6.98301 8.17795 7.13795 8.15499C7.95255 8.03101 8.63521 7.65908 9.17827 7.03919C9.71367 6.42695 9.9898 5.7091 10.0235 4.89942C10.0466 4.32698 9.92844 3.78056 9.67531 3.26628C9.30713 2.51629 8.7426 1.96069 7.97096 1.63773C6.92012 1.19998 5.89075 1.27039 4.92429 1.87497C3.92867 2.49792 3.40248 3.4224 3.32425 4.58718C3.26902 5.4137 3.49913 6.17134 4.00077 6.83562C4.6681 7.71571 5.56553 8.15958 6.68387 8.19479Z" fill="currentColor"></path></svg></div>
+										<div class="header-top-row__inf">
+											<h3>Войдите или зарегистрируйтесь, для полного доступа к сайту</h3>
+											<div class="header-top-row__inf-link">
+												<a class="header-top-row__inf-login" href="#">Войти</a>
+												<a href="#">Зарегистрироваться</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="header-main-row flex-bl align-items-center">
+								<div class="header-main__img">
+									<div class="mobile-menu-botton">
+										<div class="mobile-menu-botton__line"></div>
+										<div class="mobile-menu-botton__line"></div>
+										<div class="mobile-menu-botton__line"></div>
+									</div>
+									<a href="#"><img src="img/logo.png" alt="logo"></a>
+								</div>
+								<nav class="header-main__menu">
+									<ul class="flex-bl align-items-center header-main__menu-mobil">
+										<li class="flex-bl align-items-center header-main__menu-lvl2-row">
+											<a href="#">Мужское белье</a>
+											<div class="header-main__menu-lvl2 flex-bl">
+												<div class="header-main__menu-lvl2-col">
+													<h4>Категории</h4>
+													<ul class="flex-bl">
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a class="header-menu-popup--active" href="#header-menu-popup">Смотреть все</a></li>
+													</ul>
+												</div>
+												<div class="header-main__menu-lvl2-col">
+													<h4>Категории</h4>
+													<ul class="flex-bl">
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+													</ul>
+												</div>
+												<div class="header-main__menu-lvl2-col">
+													<h4>Категории</h4>
+													<ul class="flex-bl">
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+														<li><a href="#">Мужское белье</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="flex-bl align-items-center"><a href="#">Мужское белье</a></li>
+										<li class="flex-bl align-items-center"><a href="#">Мужское белье</a></li>
+										<li class="flex-bl align-items-center"><a href="#">Мужское белье</a></li>
+									</ul>
+								</nav>
+								<div class="header-main__cart-bl-mobile">
+									<div class="header-main__cart-bl flex-bl align-items-center">
+									<div class="header-main__cart header-main__cart--add flex-bl align-items-center">
+										<div class="header-main__cart-svg"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="shopping-bag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M352 128C352 57.421 294.579 0 224 0 153.42 0 96 57.421 96 128H0v304c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V128h-96zM224 32c52.935 0 96 43.065 96 96H128c0-52.935 43.065-96 96-96zm192 400c0 26.467-21.533 48-48 48H80c-26.467 0-48-21.533-48-48V160h64v48c0 8.837 7.164 16 16 16s16-7.163 16-16v-48h192v48c0 8.837 7.163 16 16 16s16-7.163 16-16v-48h64v272z"></path></svg></div>
+										<div class="header-main__text-bl">
+											<div class="header-main__text-bl-quantity">2 товара</div>
+											<div class="header-main__text-bl-price">2620 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div>
+										</div>
+										<div class="header-main__text">Корзина</div>
+										<div class="header-main__cart-info">
+											<div class="header-main__cart-info--add">
+												<div class="header-cart__header">2 товара в корзине</div>
+												<div class="header-cart__item flex-bl">
+													<div class="header-cart__img"><img src="img/doreance.jpg" alt="doreance"></div>
+													<div class="header-cart__text">
+														<a class="header-cart__name" href="#">Трусы мужские боксеры синие SO HOT JOHN FRANK с принтом перцев чили</a>
+														<div class="header-cart__size">Боксеры, L</div>
+														<div class="header-cart__price">690 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div>
+													</div>
+													<div class="header-cart__quantity">1 шт.</div>
+													<div class="header-cart__delete"></div>
+												</div>
+												<div class="header-cart__item header-cart__item--last flex-bl">
+													<div class="header-cart__img"><img src="img/doreance.jpg" alt="doreance"></div>
+													<div class="header-cart__text">
+														<a class="header-cart__name" href="#">Трусы мужские боксеры синие SO HOT JOHN FRANK с принтом перцев чили</a>
+														<div class="header-cart__size">Боксеры, L</div>
+														<div class="header-cart__price">690 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div>
+													</div>
+													<div class="header-cart__quantity">1 шт.</div>
+													<div class="header-cart__delete"></div>
+												</div>
+												<div class="header-cart__button-row flex-bl align-items-center justify-content--space-between">
+													<div class="header-cart__button-col-text">
+														<div>К оплате:</div>
+														<div class="header-cart__button-price">2330 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div>
+													</div>
+													<a class="header-cart__button-link" href="#">Перейти в корзину</a>
+												</div>
+											</div>
+											<div class="header-main__cart-info--no">
+												<div class="header-main__cart-quantity">0</div>
+												<div class="header-main__cart-text">В корзине нет товаров</div>
+												<a class="header-main__cart-category" href="#">Перейти в каталог</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden">
+				<div id="header-menu-popup">
+					<div class="header-menu-popup__bl">
+						<h3>Все бренды</h3>
+						<nav class="header-menu-popup__row flex-bl justify-content--space-between">
+							<ul class="header-menu-popup__col">
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+							</ul>
+							<ul class="header-menu-popup__col">
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+							</ul>
+							<ul class="header-menu-popup__col">
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+							</ul>
+							<ul class="header-menu-popup__col">
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+								<li><a href="#">Addicted</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<main class="content content-main-t">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Главная</a></li>
+							</ul>
+						</div>
+						<section class="page-corzina">
+							<header class="page-home__header"><h1>Мужские трусы</h1></header>
+							<div class="page-corzina__quantity">5 товаров в корзине</div>
+							<div class="page-corzina__bl">
+								<div class="page-corzina__bl-product">
+									<div class="page-corzina__row flex-bl align-items-center justify-content--space-between">
+										<div class="page-corzina__img img-center">
+											<img src="img/cart.jpg" alt="cart">
+										</div>
+										<div class="page-corzina__header">
+											<h3><a class="transition-03s" href="#">Мужские трусы боксеры темно-синие E5 Underwear  CLASSIC BOXER SHORT</a></h3>
+											<p>Боксеры</p>
+										</div>
+										<div class="page-corzina__size">
+											<div class="page-card__size-bl">
+												<div class="page-card__size-row">
+													<div class="page-card__size-in">Размер</div>
+													<div class="page-card__size-grup">
+														<div>x</div>
+														<div>m</div>
+														<div>l</div>
+														<div>xl</div>
+														<div>xxl</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="page-corzina__amount flex-bl">
+											<div class="page-corzina__amount-minus"><div></div></div>
+											<div class="page-corzina__amount-result">1 шт.</div>
+											<div class="page-corzina__amount-plus page-corzina__amount-pl-min--active"><div></div></div>
+										</div>
+										<div class="page-corzina__price">
+											<div class="header-cart__delete"></div>
+											<div class="page-corzina__price-number">1 шт. x 260</div>
+											<div class="page-corzina__price-result">260</div>
+										</div>
+									</div>
+									<div class="page-corzina__row flex-bl align-items-center justify-content--space-between">
+										<div class="page-corzina__img img-center">
+											<img src="img/cart.jpg" alt="cart">
+										</div>
+										<div class="page-corzina__header">
+											<h3><a class="transition-03s" href="#">Мужские трусы боксеры темно-синие E5 Underwear  CLASSIC BOXER SHORT</a></h3>
+											<p>Боксеры</p>
+										</div>
+										<div class="page-corzina__size">
+											<div class="page-card__size-bl">
+												<div class="page-card__size-row">
+													<div class="page-card__size-in">Размер</div>
+													<div class="page-card__size-grup">
+														<div>x</div>
+														<div>m</div>
+														<div>l</div>
+														<div>xl</div>
+														<div>xxl</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="page-corzina__amount flex-bl">
+											<div class="page-corzina__amount-minus page-corzina__amount-pl-min--active"><div></div></div>
+											<div class="page-corzina__amount-result">1 шт.</div>
+											<div class="page-corzina__amount-plus"><div></div></div>
+										</div>
+										<div class="page-corzina__price">
+											<div class="header-cart__delete"></div>
+											<div class="page-corzina__price-number">1 шт. x 260</div>
+											<div class="page-corzina__price-result">260</div>
+										</div>
+									</div>
+								</div>
+								<div class="page-corzina__summary flex-bl align-items-center justify-content--space-between">
+									<div class="page-corzina__promo-code">
+										<form class="flex-bl align-items-center justify-content--space-between">
+											<input type="text" placeholder="Промокод">
+											<div class="page-corzina__promo-code-button">
+												<button>Проверить</button>
+											</div>
+										</form> 
+									</div>
+									<div class="page-corzina__summary-col flex-bl align-items-center justify-content--space-between">
+										<div class="page-corzina__summary-price">
+											<p>Итого:</p>
+											2140
+										</div>
+										<div class="page-card__button-add">
+											<button>Оформить заказ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		<section class="section-current-offers">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<header class="hom-header"><h2>Актуальные предложения</h2></header>
+					</div>
+					<div class="col-6">
+						<a class="current-offers__col" href="#">
+							<div class="current-offers__img img-center"><img src="img/current-offers.jpg" alt="current offers"></div>
+							<div class="current-offers__text">Ограниченное количество товаров по супер-цене!</div>
+						</a>
+					</div>
+					<div class="col-6">
+						<a class="current-offers__col" href="#">
+							<div class="current-offers__img img-center"><img src="img/current-offers.jpg" alt="current offers"></div>
+							<div class="current-offers__text">Ограниченное количество товаров по супер-цене!</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-latest-products section-latest-products-cart">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<header class="hom-header"><h2>Вам могут понравиться</h2></header>
+						<div class="latest-products__carrousel carr-prev-next owl-theme owl-carousel">
+							<a class="latest-products__cart" href="#">
+								<div class="latest-products__prem-bl">
+									<div class="latest-products__prem">20%</div>
+									<div class="latest-products__prem latest-products__prem--yellow">Премиум</div>
+									<div class="latest-products__prem latest-products__prem--green">🔥 s</div>
+								</div>
+								<div class="latest-products__img img-center">
+									<img src="img/doreance.jpg" alt="doreance">
+									<div class="latest-products__cart-add-bl-n">
+										<div class="latest-products__cart-add transition-03s">
+										В корзину
+										</div>
+										<div class="latest-products__cart-add-bl-n-size">
+											<div>x</div>
+											<div>m</div>
+											<div>l</div>
+											<div>xl</div>
+											<div>xxl</div>
+										</div>
+										<div class="latest-products__cart-add-bl-n-akt">Товар в корзине</div>
+									</div>
+								</div>
+								<div class="latest-products__text">
+									<h4>Произвольный набор из 5 мужских семейных трусов премиум качества Doreanse 1525</h4>
+									<p>Сеты и наборы нижнего белья</p>
+									<div class="latest-products__price latest-products__price-red">1 450 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg><div class="latest-products__price--through">1 750 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div></div>
+								</div>
+							</a>
+							<a class="latest-products__cart" href="#">
+								<div class="latest-products__prem-bl">
+									<div class="latest-products__prem">20%</div>
+									<div class="latest-products__prem latest-products__prem--yellow">Премиум</div>
+									<div class="latest-products__prem latest-products__prem--green">🔥 s</div>
+								</div>
+								<div class="latest-products__img img-center">
+									<img src="img/doreance.jpg" alt="doreance">
+									<div class="latest-products__cart-add-bl-n">
+										<div class="latest-products__cart-add transition-03s">
+										В корзину
+										</div>
+										<div class="latest-products__cart-add-bl-n-size">
+											<div>x</div>
+											<div>m</div>
+											<div>l</div>
+											<div>xl</div>
+											<div>xxl</div>
+										</div>
+										<div class="latest-products__cart-add-bl-n-akt">Товар в корзине</div>
+									</div>
+								</div>
+								<div class="latest-products__text">
+									<h4>Произвольный набор из 5 мужских семейных трусов премиум качества Doreanse 1525</h4>
+									<p>Сеты и наборы нижнего белья</p>
+									<div class="latest-products__price latest-products__price-red">1 450 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg><div class="latest-products__price--through">1 750 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div></div>
+								</div>
+							</a>
+							<a class="latest-products__cart" href="#">
+								<div class="latest-products__prem-bl">
+									<div class="latest-products__prem">20%</div>
+									<div class="latest-products__prem latest-products__prem--yellow">Премиум</div>
+									<div class="latest-products__prem latest-products__prem--green">🔥 s</div>
+								</div>
+								<div class="latest-products__img img-center">
+									<img src="img/doreance.jpg" alt="doreance">
+									<div class="latest-products__cart-add-bl-n">
+										<div class="latest-products__cart-add transition-03s">
+										В корзину
+										</div>
+										<div class="latest-products__cart-add-bl-n-size">
+											<div>x</div>
+											<div>m</div>
+											<div>l</div>
+											<div>xl</div>
+											<div>xxl</div>
+										</div>
+										<div class="latest-products__cart-add-bl-n-akt">Товар в корзине</div>
+									</div>
+								</div>
+								<div class="latest-products__text">
+									<h4>Произвольный набор из 5 мужских семейных трусов премиум качества Doreanse 1525</h4>
+									<p>Сеты и наборы нижнего белья</p>
+									<div class="latest-products__price latest-products__price-red">1 450 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg><div class="latest-products__price--through">1 750 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div></div>
+								</div>
+							</a>
+							<a class="latest-products__cart" href="#">
+								<div class="latest-products__prem-bl">
+									<div class="latest-products__prem">20%</div>
+									<div class="latest-products__prem latest-products__prem--yellow">Премиум</div>
+									<div class="latest-products__prem latest-products__prem--green">🔥 s</div>
+								</div>
+								<div class="latest-products__img img-center">
+									<img src="img/doreance.jpg" alt="doreance">
+									<div class="latest-products__cart-add-bl-n">
+										<div class="latest-products__cart-add transition-03s">
+										В корзину
+										</div>
+										<div class="latest-products__cart-add-bl-n-size">
+											<div>x</div>
+											<div>m</div>
+											<div>l</div>
+											<div>xl</div>
+											<div>xxl</div>
+										</div>
+										<div class="latest-products__cart-add-bl-n-akt">Товар в корзине</div>
+									</div>
+								</div>
+								<div class="latest-products__text">
+									<h4>Произвольный набор из 5 мужских семейных трусов премиум качества Doreanse 1525</h4>
+									<p>Сеты и наборы нижнего белья</p>
+									<div class="latest-products__price latest-products__price-red">1 450 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg><div class="latest-products__price--through">1 750 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div></div>
+								</div>
+							</a>
+							<a class="latest-products__cart" href="#">
+								<div class="latest-products__prem-bl">
+									<div class="latest-products__prem">20%</div>
+									<div class="latest-products__prem latest-products__prem--yellow">Премиум</div>
+									<div class="latest-products__prem latest-products__prem--green">🔥 s</div>
+								</div>
+								<div class="latest-products__img img-center">
+									<img src="img/doreance.jpg" alt="doreance">
+									<div class="latest-products__cart-add-bl-n">
+										<div class="latest-products__cart-add transition-03s">
+										В корзину
+										</div>
+										<div class="latest-products__cart-add-bl-n-size">
+											<div>x</div>
+											<div>m</div>
+											<div>l</div>
+											<div>xl</div>
+											<div>xxl</div>
+										</div>
+										<div class="latest-products__cart-add-bl-n-akt">Товар в корзине</div>
+									</div>
+								</div>
+								<div class="latest-products__text">
+									<h4>Произвольный набор из 5 мужских семейных трусов премиум качества Doreanse 1525</h4>
+									<p>Сеты и наборы нижнего белья</p>
+									<div class="latest-products__price latest-products__price-red">1 450 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg><div class="latest-products__price--through">1 750 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div></div>
+								</div>
+							</a>
+							<a class="latest-products__cart" href="#">
+								<div class="latest-products__prem-bl">
+									<div class="latest-products__prem">20%</div>
+									<div class="latest-products__prem latest-products__prem--yellow">Премиум</div>
+									<div class="latest-products__prem latest-products__prem--green">🔥 s</div>
+								</div>
+								<div class="latest-products__img img-center">
+									<img src="img/doreance.jpg" alt="doreance">
+									<div class="latest-products__cart-add-bl-n">
+										<div class="latest-products__cart-add transition-03s">
+										В корзину
+										</div>
+										<div class="latest-products__cart-add-bl-n-size">
+											<div>x</div>
+											<div>m</div>
+											<div>l</div>
+											<div>xl</div>
+											<div>xxl</div>
+										</div>
+										<div class="latest-products__cart-add-bl-n-akt">Товар в корзине</div>
+									</div>
+								</div>
+								<div class="latest-products__text">
+									<h4>Произвольный набор из 5 мужских семейных трусов премиум качества Doreanse 1525</h4>
+									<p>Сеты и наборы нижнего белья</p>
+									<div class="latest-products__price latest-products__price-red">1 450 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg><div class="latest-products__price--through">1 750 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z"></path></svg></div></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__menu-row flex-bl">
+						<nav class="footer__menu-col">
+							<h4>Категории</h4>
+							<ul>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+							</ul>
+						</nav>
+						<nav class="footer__menu-col">
+							<h4>Категории</h4>
+							<ul class="footer__menu-2col">
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+							</ul>
+						</nav>
+						<nav class="footer__menu-col">
+							<h4>Категории</h4>
+							<ul>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+							</ul>
+						</nav>
+						<nav class="footer__menu-col">
+							<h4>Категории</h4>
+							<ul>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+							</ul>
+						</nav>
+						<nav class="footer__menu-col">
+							<h4>Категории</h4>
+							<ul>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+								<li><a href="#">Мужское белье</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-4"><p>© RusTrus. 2020. Все права защищены</p></div>
+					<div class="col-12 col-sm-4"><a href="#">Условия обработки персональных данных</a></div>
+					<div class="col-12 col-sm-4"><p>Разработка сайта: <a href="#">Rocket Science</a></p></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="hidden">
+	
+	</div>
+
+	<script defer src="libs/jquery/jquery-1.11.2.min.js"></script><!--jquery-1.11.2-->
+	<script defer src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+	<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	
+	<script defer src="js/common.js"></script>
+	
+</body>
+</html>

@@ -262,6 +262,59 @@
 	.latest-products__cart-add-bl-n {
 		opacity: 1;
 	}
+	.page-corzina__row {
+		position: relative;
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+	}
+	.page-corzina__row-bl2 {
+		-webkit-box-flex: 1;
+        -ms-flex: 1;
+		flex: 1;
+		margin-top: 15px;
+	}
+	.page-corzina__price .header-cart__delete {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+	.page-corzina__header {
+		margin-right: 35px;
+	}
+	.page-corzina__size {
+		margin-left: 0;
+	}
+	.page-corzina__summary {
+		position: relative;
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+	}
+	.page-corzina__summary-col,
+	.page-corzina__promo-code {
+		width: 100%;
+	}
+	.page-corzina__promo-code {
+		margin-bottom: 15px;
+	}
+	.page-corzina__summary-col .page-card__button-add,
+	.page-corzina__summary-price,
+	.page-corzina__promo-code input {
+		width: 50%;
+	}
+	.page-corzina__promo-code .page-corzina__promo-code-button {
+		width: 50%;
+		padding-left: 15px;
+	}
+	.page-corzina__promo-code .page-corzina__promo-code-button button {
+		width: 100%;
+		margin-left: 0;
+	}
+	.page-corzina__summary-col .page-card__button-add {
+		padding-left: 15px;
+	}
+	.current-offers__text {
+		line-height: 19px;
+	}
 }
 
 @media only screen and (max-width : 768px) {
@@ -532,6 +585,59 @@
 	.footer__menu-col:last-child {
 		border: none;
 		margin-bottom: 0;
+	}
+	.page-corzina__row-bl2 {
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+	}
+	.page-corzina__size {
+		width: 100%;
+		margin: 0 0 15px;
+	}
+	.page-card__size-in {
+		height: auto;
+		padding: 12px 15px 13px 15px;
+		line-height: 24px;
+	}
+	.page-card__size-in:after {
+		top: 19px;
+	}
+	.page-corzina__price-result {
+		font-size: 24px;
+	}
+	.page-corzina__amount {
+		margin-left: 0;
+	}
+	.page-corzina__promo-code-button button,
+	.page-corzina__promo-code input {
+		padding: 10px 15px 13px 15px;
+	}
+	.page-corzina__summary-price p {
+		margin-bottom: 1px;
+	}
+	.page-corzina__promo-code input,
+	.page-corzina__summary-price {
+		width: 40%;
+	}
+	.page-corzina__summary-col .page-card__button-add,
+	.page-corzina__promo-code .page-corzina__promo-code-button {
+		width: 60%;
+	}
+	.page-corzina__promo-code-button button {
+		min-width: 0;
+	}
+	.page-corzina__summary-price {
+		font-size: 29px;
+	}
+	.page-corzina__summary-price:after {
+		width: 15px;
+		height: 20px;
+	}
+	.page-corzina {
+		margin-bottom: 0px;
+	}
+	.current-offers__col {
+		margin-bottom: 15px;
 	}
 }
 

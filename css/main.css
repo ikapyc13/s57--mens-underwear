@@ -188,7 +188,9 @@ div .flex-bl {
 	fill: #fff;
 }
 .header-top-row__menu {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	margin: 0 15px;
 }
 .header-top-row__menu ul {
@@ -290,7 +292,9 @@ div .flex-bl {
 	height: 85px;
 }
 .header-main__menu {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	height: 100%;
 }
 .header-main__menu>ul {
@@ -546,7 +550,9 @@ div .flex-bl {
 	max-height: 80px;
 }
 .header-cart__name {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	max-width: 280px;
 	font-size: 18px;
     margin-bottom: 0;
@@ -854,7 +860,9 @@ div .header-menu-popup--active {
 	cursor: default;
 }
 .latest-products__cart-add-bl-n-size div {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	padding: 9px 0 11px;
 	cursor: pointer;
 }
@@ -1313,7 +1321,9 @@ div .page-card__price-through {
 	width: 24px;
 }
 .page-card__buy-in-1click {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	margin-left: 15px;
 }
 .page-card__buy-in-1click-bl a:hover {
@@ -1373,7 +1383,9 @@ div .page-card__price-through {
 	margin: 0 -5px;
 }
 .page-category-filter form select {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	padding: 10px 20px 12px 23px;
 	margin: 0 5px;
 	border: 1px solid #dedede;
@@ -1454,7 +1466,7 @@ div .page-card__price-through {
 /*/category*/
 /*corzina*/
 .page-corzina {
-	margin-bottom: 50px;;
+	margin-bottom: 50px;
 }
 .page-corzina__quantity {
 	margin-top: 20px;
@@ -1478,7 +1490,7 @@ div .page-card__price-through {
     overflow: hidden;
 }
 .page-corzina__header {
-	max-width: 300px;
+	margin: 0 15px;
 }
 .page-corzina__header a {
 	font-size: 16px;
@@ -1497,14 +1509,15 @@ div .page-card__price-through {
     font-weight: 400;
 }
 .page-corzina__size {
-	width: 100%;
-	max-width: 260px;
+	width: 260px;
+	margin: 0 15px;
 }
 .page-corzina__size .page-card__size-bl {
 	margin-top: 0;
 }
 .page-corzina__amount {
 	position: relative;
+	margin: 0 15px;
 }
 .page-corzina__amount-plus,
 .page-corzina__amount-minus {
@@ -1547,7 +1560,8 @@ div .page-card__price-through {
 .page-corzina__amount-result {
 	padding: 0 10px;
 	opacity: 0.5;
-    color: #222222;
+	color: #222222;
+	white-space: nowrap;
 }
 .page-corzina__amount-minus:hover div,
 .page-corzina__amount-plus:hover div,
@@ -1557,7 +1571,9 @@ div .page-card__price-through {
 	background-color: #000;
 }
 .page-corzina__price {
+	margin-left: 15px;
 	text-align: right;
+	white-space: nowrap;
 }
 .page-corzina__price .header-cart__delete {
 	display: inline-block;
